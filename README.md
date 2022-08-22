@@ -1,4 +1,6 @@
-# github.com/shibukwa/formatdata-go
+# github.com/shibukawa/formatdata-go
+
+[![Go Reference](https://pkg.go.dev/badge/github.com/shibukawa/formatdata-go.svg)](https://pkg.go.dev/github.com/shibukawa/formatdata-go)
 
 Simple pretty print library
 
