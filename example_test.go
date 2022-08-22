@@ -56,7 +56,6 @@ func ExampleFormatData_MarkdownTable() {
 }
 
 func ExampleFormatData_YAML() {
-	// If the data can not be represented as table and no format specified, or YAML is specified,
 	// it shows in YAML format
 	tableData := []SampleStruct{
 		{
@@ -76,4 +75,32 @@ func ExampleFormatData_YAML() {
 	//   b: 1
 	// - a: b
 	//   b: 2
+}
+
+func ExampleFormatData_JSON() {
+	// it shows in JSON format
+	tableData := []SampleStruct{
+		{
+			A: "a",
+			B: 1,
+		},
+		{
+			A: "b",
+			B: 2,
+		},
+	}
+	formatdata.FormatData(tableData, formatdata.Opt{
+		OutputFormat: formatdata.JSON,
+	})
+	// Output:
+	// [
+	//   {
+	//     "a": "a",
+	//     "b": 1
+	//   },
+	//   {
+	//     "a": "b",
+	//     "b": 2
+	//   }
+	// ]
 }

@@ -81,6 +81,7 @@ func FormatDataWithColor(data any, out io.Writer, o ...Opt) error {
 		var b bytes.Buffer
 		e := json.NewEncoder(&b)
 		e.SetIndent("", strings.Repeat(" ", opt.Indent))
+		e.Encode(data)
 		return quick.Highlight(out, b.String(), "json", opt.Formatter, opt.Style)
 	}
 }
