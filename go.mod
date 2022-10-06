@@ -7,7 +7,7 @@ require (
 	github.com/mattn/go-colorable v0.1.13
 	github.com/shibukawa/stringwidth v0.2.0
 	github.com/stretchr/testify v1.8.0
-	golang.org/x/crypto v0.0.0-20220817201139-bc19a97f63c8
+	golang.org/x/crypto v0.0.0-20221005025214-4161e89ecf1b
 	gopkg.in/yaml.v3 v3.0.1
 )
 

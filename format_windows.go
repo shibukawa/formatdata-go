@@ -1,5 +1,13 @@
 package formatdata
 
+import (
+	"io"
+	"os"
+
+	"github.com/mattn/go-colorable"
+	"golang.org/x/crypto/ssh/terminal"
+)
+
 // FormatDataTo is variation of [FormatData]. You can specify output destination.
 //
 // If out is terminal, it uses escape sequence to dump colorized output.
